@@ -1,148 +1,109 @@
-/* Personal Information Section */
-section {
-  margin: 2rem 0;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-section li {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-  section li {
-    font-size: 1rem;
-  }
-}
-
-/* Portfolio Styles */
-
-/* Header */
+/* Style for header section */
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #444;
-  color: #fff;
+  background-color: #333;
+  color: white;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 3rem;
+  margin: 1rem 0;
 }
 
 header nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1.5rem;
-}
-
-/* Main Content */
-main {
-  padding: 2rem;
-}
-
-/* Section Headings */
-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Lists */
-ul {
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-li {
-  font-size: 1.1rem;
+header nav li {
+  margin: 0 1rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Style for main section */
+main {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+main section {
+  margin-bottom: 2rem;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main ul {
+  margin: 1rem 0;
+  padding: 0 1.5rem;
+}
+
+main li {
   margin-bottom: 0.5rem;
 }
 
-/* Links */
-a {
-  color: #0077cc;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover {
-  color: #005ea8;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 768px) {
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
+    margin: 20px 0;
   }
 
   header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem 0;
   }
 
   header nav {
-    margin-top: 1rem;
+    margin: 1rem 0;
   }
 
-  header nav a {
-    margin-left: 0;
-    margin-right: 1.5rem;
+  header nav li {
+    margin: 0.5rem;
   }
 
-  main {
-    padding: 1rem;
+  section {
+  padding-left: 2px;
+}
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  main ul {
+    padding: 0 1rem;
   }
 }
 
-
-
-
-
-
-/* CSS for the navbar */
 nav {
-  background-color: #333; /* Set the background color */
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white; /* Set the color of the links */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #111; /* Set the background color when the link is hovered over */
+  margin: 20px 0;
 }
 
